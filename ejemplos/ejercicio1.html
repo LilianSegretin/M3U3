@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> transporte apropiado</title>
+    <link rel="stylesheet" href="js/codigo.js">
+
+</head>
+
+<body>
+    <script>
+        var valor;
+        valor = prompt('Ingrese la cantidad de metros que desea recorrer:', '');
+        valor = parseInt(valor);
+
+
+        if (valor <= 1000) {
+            document.write('El medio de transporte adecuado es a Pie');
+
+        } else {
+            if (valor <= 10000) {
+                document.write('El medio de transporte adecuado es Bicicleta');
+            } else {
+                if (valor <= 30000) {
+                    document.write('El medio de transporte adecuado es Colectivo');
+
+                } else {
+                    if (valor <= 100000) {
+                        document.write('El medio de transporte adecuado es Auto');
+
+                    } else {
+                        document.write('El medio de transporte adecuado es Avion');
+
+                    }
+
+                }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
